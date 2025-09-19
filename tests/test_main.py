@@ -1,4 +1,4 @@
-from src.main import add
+from src import add
 import pytest
 
 
