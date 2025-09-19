@@ -32,7 +32,7 @@ jobs:
       
       - name: Run tests with coverage
         run: |
-          pytest --cov=./
+          pytest --cov --cov-branch --cov-report=xml
       
       - name: Run tests
         env:
