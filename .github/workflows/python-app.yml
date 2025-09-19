@@ -31,6 +31,8 @@ jobs:
         run: black --check . 
       
       - name: Run tests with coverage
+        env:
+          PYTHONPATH: ./src  # PYTHONPATHを設定
         run: |
           pytest --cov --cov-branch --cov-report=xml
       
