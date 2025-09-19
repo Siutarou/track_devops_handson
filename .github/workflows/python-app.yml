@@ -32,7 +32,7 @@ jobs:
       
       - name: Run tests with coverage
         env:
-          PYTHONPATH: ./src  # PYTHONPATHを設定
+          PYTHONPATH: ${{ github.workspace }}/src  # PYTHONPATHを設定
         run: |
           pytest --cov --cov-branch --cov-report=xml
       
